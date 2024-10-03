@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ly Pham</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ly Pham</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience </a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <header> 
+        <div class="container"> 
+            <h1>KLM Introduction Game</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#about-the-project">About the project</a></li> 
+                    <li><a href="#visualguide">Visual guide</a></li> 
+                    <li><a href="#game">The game</a></li>
+                </ul> 
+            </nav> 
+        </div> 
+    </header> <!-- Main Content --> 
+
+    <main> 
+        <div class="container1"> 
+
+                    <div id="about-the-project" class="sectionDetails textLeft"> 
+                        <h2>ABOUT THE PROJECT</h2> 
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>The project is a game that will introduce the players to the Schiphol Oost area, the buildings they will be working at and the simulation of how to collect the KLM ID at the specific location. Because when working in the Schiphol Oost area, people need to have a KLM ID in order to enter the gate and, therefore, the buildings. However, the building to collect the KLM ID is located outside of the Schiphol Oost, and they need to get it before the working day so that they can enter the area/building on the first day of work. With that in mind, the game would be an excellent way to show the new interns (students) around the area and its buildings and give instructions on taking specific actions before the first working day.</p>
+                            </div>
+                            <div class="itemRight">
+                                <img src="./assets/klm - internship game/20.jpg" alt="game">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Problem Section --> 
+                    <div id="visualguide" class="sectionDetails textRight"> 
+                        <h2>VISUAL GUIDE</h2> 
+                        <div class="wrapItem">
+                            <div class="itemRight">
+                               <img src="./assets/klm - internship game/21.png" alt="game" style="width: 120%;">
+                            </div>
+                            <div class="itemLeft">
+                                <p>
+                                    This visual guide shows how the colours should be used in the onboarding game. Each object in the game should contain three primary colours: the main, shadow, and highlight colours, to ensure that the drawings do not look plain but enhance the perspective and depth of the objects in the game. Also, there are some examples of how the colour combinations look like in the game.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="game" class="sectionDetails">
+                        <h2>THE GAME</h2> 
+                        <p>By visiting this link, you can try out the game. Hope you will enjoy!<br><a href="https://klmgameappdesignteam.itch.io/onboarding-game-test-env" target="_blank">https://klmgameappdesignteam.itch.io/onboarding-game-test-env</a>
+                        </p>
+                        <img src="./assets/klm - internship game/thegame.jpg" alt="styleguide" style=" display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 70%;">
+                     </div>
+            </div>
+        </main>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p>Copyright &#169; 2024 Ly Pham. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

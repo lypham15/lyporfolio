@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ly Pham</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ly Pham</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience </a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <header> 
+        <div class="container"> 
+            <h1>Energy Transition - Smart Society</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#about-the-project">About the project</a></li> 
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#concepts">Design concepts</a></li>
+                    <li><a href="#outcome">Outcome</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> <!-- Main Content --> 
+
+    <main> 
+        <div class="container1"> 
+
+                    <div id="about-the-project" class="sectionDetails textLeft"> 
+                        <h2>ABOUT THE PROJECT</h2> 
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>The interactive tool shall be based on existing open data sources with yearly energy consumption data. Users must be able to see the effects of different what-if scenarios to hone their views. The user experience shall be available through a website and on mobile devices (option). The information is location based on a group level.</p>
+                            </div>
+                            <div class="itemRight">
+                                <img src="./assets/energy transition - smart society/2.png" alt="project">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Problem Section --> 
+                    <div id="problem" class="sectionDetails textRight"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemRight">
+                                <h2>PROBLEM</h2> 
+                            </div>
+                            <div class="itemLeft">
+                                <p>How can resident views be collected to generated feedback to strengthen municipal policy? <br>
+                                    How can this be used to motivate neighbourhoods to take follow-up actions?</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <!--  Persona Section -->
+
+                    <div id="concepts" class="sectionDetails textLeft"> 
+                        <h2>DESIGN CONCEPTS</h2> 
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <h3>Concept 1: Awareness Stops</h3>
+                                <i><h4>public space | awareness | interaction</h4></i><br>
+                                <h3>Concept Description</h3>
+                                <p>With the goal to raise more awareness of day-to-day energy consumed by
+                                    students, we’ve come up with the concept of Awareness Stops.
+                                    This concept focuses on multiple topics within the energy transition. The main part of it is "redecorated" interactive bus stations throughout the city of Delft. Each bus stop focuses on a different problem: water, electricity, and gas.</p> <br>
+                                <h3>Value Proposition</h3>
+                                <p>Students can learn about energy transition in their daily busy lives while waiting for the bus.</p> <br>
+                                <h3>
+                                    Electricity bus stop</h3>
+                                <p>People at the bus stop get notified when an apartment (it could also compare neighborhoods) uses an extreme amount of electricity. A notification pops up and the user will hear a beeping sound. <br>
+                                By clicking on the switch the user can turn off the power to the apartment. But there is a twist! <br>
+                                Instead of cutting off the power to the apartment, it turns off the power at the bus station. It's a reminder for people to create a change in their own homes.</p> <br>
+                                <h3>
+                                    Water usage bus stop</h3>
+                                <p>
+                                    At the bus stop are a huge water tap and a bench that looks like a bathtub. Next to it are the tubes that show the user how much water is used when taking a 10 min shower, a bath, and flushing the toilet.</p>
+                            </div>
+                            
+                            <!-- Slideshow container -->
+                            <div class="itemRight">
+                                <img src="./assets/energy transition - smart society/concept1.jpg" alt="concept" style=" margin-top: -100px;">
+                                <img src="./assets/energy transition - smart society/concept1.1.jpg" alt="concept" style=" margin-top: -500px;">
+                                    
+                                    <!-- <div class="slideshow-container">
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">1 / 2</div>
+                                      <img src="./assets/klm - internship market webapp/Untitled2.png" style="width:100%">
+                                      <div class="text"></div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">2 / 2</div>
+                                      <img src="./assets/klm - internship market webapp/Untitled3.png" style="width:100%">
+                                      <div class="text"></div>
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                    
+                                    </div>
+                                    <br>
+                                    
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span> 
+                                      <span class="dot" onclick="currentSlide(2)"></span> 
+                                    </div>
+                                    
+                                    <script>
+                                    let slideIndex = 1;
+                                    showSlides(slideIndex);
+                                    
+                                    function plusSlides(n) {
+                                      showSlides(slideIndex += n);
+                                    }
+                                    
+                                    function currentSlide(n) {
+                                      showSlides(slideIndex = n);
+                                    }
+                                    
+                                    function showSlides(n) {
+                                      let i;
+                                      let slides = document.getElementsByClassName("mySlides");
+                                      let dots = document.getElementsByClassName("dot");
+                                      if (n > slides.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";  
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndex-1].style.display = "block";  
+                                      dots[slideIndex-1].className += " active";
+                                    }
+                                    </script> -->
+
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="sectionDetails textRight"> 
+                        <h2>DESIGN CONCEPTS</h2> 
+                        <div class="wrapItem">
+                            <div class="itemRight">
+                                <img src="./assets/energy transition - smart society/virtualpet.jpg" alt="concept" style=" margin-top: -100px;">
+                                <img src="./assets/energy transition - smart society/5.png" alt="concept" style=" margin-top: -400px;">
+                            </div>
+                            <div class="itemLeft">
+                                <h3>Concept 2: Dorm Pets</h3>
+                                <i><h4>digital | data visualisation | tournament</h4></i><br>
+                                <h3>Concept Description</h3>
+                                <p>Our concept helps groups of students develop a sense of collective ownership and responsibility over their household water and heat usage. It also takes into consideration various motivators that drive unit students with different incentives into action. How do we achieve so? <br>
+                                    By urging students to be good owners of their co-owned Dorm pets. <br>
+                                    Each unit adopts and names a virtual pet that tracks the group's monthly energy consumption, which will be directly translated into the pet's health status. They may even customize this pet (color, shape)and create a slogan. Street view provides an overview of the neighborhood's group and collective pet health status. The energy consumption is measured based on the median monthly usage of the students, and the pet notifies when it gets data from the monthly electronic bill. <br>
+                                    Using the median energy consumption per person as a baseline, the student/unit's monthly energy usage will impact the pet's health status. Users can see the emotional expression/sickness of the pet. The pet also sends seasonal energy-saving tips/its feelings to its owners through weekly notifications. <br>
+                                    By the end of the year, rewards such as beer snack boxes/ discount coupons/gift cards/ donation options will be unlocked and shared among winning units. The gifts will depend on sponsors and organizations that are interested in inspiring sustainability in younger generations.</p> <br>
+                                <h3>Value Proposition</h3>
+                                <p>Provide a real-time overview to the student/unit's monthly energy usage in comparison to its peers. Users are incentivized through an emotional connection with a pet & competition. Users receive bite-sized seasonal energy-saving tips on a consistent basis.</p> <br>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionDetails textLeft"> 
+                        <h2>DESIGN CONCEPTS</h2> 
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <h3>Concept 3: WE Garden</h3>
+                                <i><h4>community | physical | challenge</h4></i><br>
+                                <h3>Concept Description</h3>
+                                <p>This concept showcases the idea that we as a community can achieve much more together than if we were to do that same thing on our own. <br>
+                                    In essence, the concept proposition focuses on a student dormitory, where a large number of students share the common areas of a flat, with individual studios and living spaces. By introducing a vertical indoor garden in the communal part of the flat - being the ground floor space or simply the area within each floor, residents of the building can enjoy fresh herbs, vegetables, fruits, and plants. <br>
+                                    To give residents the chance to develop a sense of collective ownership and responsibility, the garden and its state would be used as a means of showcasing each household's energy consumption. Depending on the monthly energy consumption of the building, the residents would either have a thriving garden and fresh produce, or would be left out with nothing, but a rather gloomy decoration piece. <br>
+                                    To bring awareness over the energy consumption of the entire building and the actions they can overtake, in order to assure the strong health of the garden, the inhabitants of the space would be given weekly challenges with the incentive of collectively lowering their heat/water consumption. <br>
+                                    Through the usage of a smart mirror(s), placed in vital points in the building, students living in the building would be able to keep track of the weekly communal challenges, next to getting an overview of the garden's condition.</p> <br>
+                               
+                            </div>
+                            <div class="itemRight">
+                                <img src="./assets/energy transition - smart society/garden.jpeg" alt="concept" style=" margin-top: -100px;">
+                                <img src="./assets/energy transition - smart society/7.png" alt="concept" style=" margin-top: -250px;">
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                   
+                   
+                     <div id="outcome" class="sectionDetails">
+                        <h2>OUTCOME</h2>
+
+                        <h2>Bus Stop & Transiton Webiste</h2>
+                            <p style="text-align: justify;">The purpose of having mini-games as part of the overall experience we intend to create, has to do with bringing awareness to not only individual’s energy consumption, but also to our main product - the mobile application. The bus stop games follow day-to-day life experiences and are designed to be relatable to the user. One presenting the water-saving action and the other one related to the act of turning off the lights. At the very end screen of this interactive animation, we let know users what is to be expected from the application, the purpose of using the app, and the QR code to download the app.</p> 
+                            <p>Since the time people wait at the bus stop would be comparatively short, they might not have enough time to download the app immediately. Also, some people might want to have a deeper look at what they are going to download on the phone and use it. When people scan the QR code at the bus stop, this page will appear and it will give more time for them to read the information about the app and download it when they are ready. <br>
+                    
+                        <div class="slideshow-container">
+                                    
+                            <div class="mySlides1 fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="./assets/energy transition - smart society/app.png" style="display: block; margin-left: auto; margin-right: auto; height: 670px;">
+                              <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides1 fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="./assets/energy transition - smart society/app1.jpg" style="width:70%; height: 70%; display: block; margin-left: auto; margin-right: auto;">
+                              <div class="text"></div>
+                            </div>
+
+                            <div class="mySlides1 fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="./assets/energy transition - smart society/prototype.jpeg" style="display: block; margin-left: auto; margin-right: auto; height: 670px;">
+                                <div class="text"></div>
+                              </div>
+                            
+                            <a class="prev" onclick="plusSlidesSecond(-1)">❮</a>
+                            <a class="next" onclick="plusSlidesSecond(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot1" onclick="currentSlideSecond(1)"></span> 
+                              <span class="dot1" onclick="currentSlideSecond(2)"></span> 
+                              <span class="dot1" onclick="currentSlideSecond(3)"></span> 
+                            </div>
+                            
+                            <script>
+                            let slideIndexSecond = 1;
+                            showSlidesSecond(slideIndexSecond);
+                            
+                            function plusSlidesSecond(n) {
+                              showSlidesSecond(slideIndexSecond += n);
+                            }
+                            
+                            function currentSlideSecond(n) {
+                              showSlidesSecond(slideIndexSecond = n);
+                            }
+                            
+                            function showSlidesSecond(n) {
+                              let i;
+                              let slides1 = document.getElementsByClassName("mySlides1");
+                              let dots1 = document.getElementsByClassName("dot1");
+                              if (n > slides1.length) {slideIndexSecond = 1}    
+                              if (n < 1) {slideIndexSecond = slides1.length}
+                              for (i = 0; i < slides1.length; i++) {
+                                slides1[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots1.length; i++) {
+                                dots1[i].className = dots1[i].className.replace(" active", "");
+                              }
+                              slides1[slideIndexSecond-1].style.display = "block";  
+                              dots1[slideIndexSecond-1].className += " active";
+                            }
+                            </script>
+                            <br>
+
+                            <h2>The App</h2>
+                                
+                                    <div class="slideshow-container">
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">1 / 10</div>
+                                      <img src="./assets/energy transition - smart society/image.png" style="width:70%; height: 70%; display: block; margin-left: auto; margin-right: auto;">
+                                      <div class="text">The app prototype</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">2 / 10</div>
+                                      <img src="./assets/energy transition - smart society/app2.0.png" style="width:100%">
+                                      <div class="text">For onboarding, we minimized the sign-up process to make it easy to use and make it possible to set usernames and characters to create a personal experience for the user.</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">3 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.1.png" style="width:100%">
+                                        <div class="text">On the homepage, users can check their habits by date, add new habits, and access invites and messages they've received from friends.</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">4 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.2.png" style="width:100%">
+                                        <div class="text">The explore page includes one fully worked out flow, to add a habit to do the laundry at 30 °C.</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">5 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.3.png" style="width:100%">
+                                        <div class="text">
+                                            In which the user can send an invitation to a friend and also receives proof of the action from that friend.</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">6 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.4.png" style="width:100%">
+                                        <div class="text">Besides that, there is another flow, where the user receives a challenge invite and then sends proof to the friend.</div>
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">7 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.5.png" style="width:100%">
+                                        <div class="text">Besides that, there is another flow, where the user receives a challenge invite and then sends proof to the friend.</div>
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">8 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.6.png" style="width:100%">
+                                        <div class="text">Besides that, there is another flow, where the user receives a challenge invite and then sends proof to the friend.</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">9 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.7.png" style="width:100%">
+                                        <div class="text">As the community feeling was very important, we incorporated a design to compare the rankings of friends and neighbors in the community. To get motivated by their friends, we included a way to show what habits friends do to gain a lot of impact points.</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">10 / 10</div>
+                                        <img src="./assets/energy transition - smart society/app2.8.png" style="width:100%">
+                                        <div class="text">
+                                            The account is for the user's process, habits, and achievements. In addition, we have created a space to provide feedback to the municipality.</div>
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                    
+                                    </div>
+                                    <br>
+                                    
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span> 
+                                      <span class="dot" onclick="currentSlide(2)"></span>
+                                      <span class="dot" onclick="currentSlide(3)"></span> 
+                                      <span class="dot" onclick="currentSlide(4)"></span> 
+                                      <span class="dot" onclick="currentSlide(5)"></span> 
+                                      <span class="dot" onclick="currentSlide(6)"></span> 
+                                      <span class="dot" onclick="currentSlide(7)"></span> 
+                                      <span class="dot" onclick="currentSlide(8)"></span> 
+                                      <span class="dot" onclick="currentSlide(9)"></span> 
+                                      <span class="dot" onclick="currentSlide(10)"></span>  
+                                    </div>
+                                    
+                                    <script>
+                                    let slideIndex = 1;
+                                    showSlides(slideIndex);
+                                    
+                                    function plusSlides(n) {
+                                      showSlides(slideIndex += n);
+                                    }
+                                    
+                                    function currentSlide(n) {
+                                      showSlides(slideIndex = n);
+                                    }
+                                    
+                                    function showSlides(n) {
+                                      let i;
+                                      let slides = document.getElementsByClassName("mySlides");
+                                      let dots = document.getElementsByClassName("dot");
+                                      if (n > slides.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";  
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndex-1].style.display = "block";  
+                                      dots[slideIndex-1].className += " active";
+                                    }
+                                    </script>
+
+                            
+                     </div>
+
+            </div> 
+        </main> 
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p>Copyright &#169; 2024 Ly Pham. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

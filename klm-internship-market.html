@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ly Pham</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ly Pham</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience </a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <header> 
+        <div class="container"> 
+            <h1>KLM Internship Market Webapp</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#about-the-project">About the project</a></li> 
+                    <li><a href="#problem">Problem</a></li> 
+                    <li><a href="#research-questions">Research Questions</a></li> 
+                    <li><a href="#insights">Research Insights</a></li> 
+                    <li><a href="#persona">Persona</a></li> 
+                    <li><a href="#engagement">User Engagement</a></li> 
+                    <li><a href="#styleGuide">Style Guide</a></li> 
+                    <li><a href="#outcome">Outcome</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> <!-- Main Content --> 
+
+    <main> 
+        <div class="container1"> 
+
+                    <div id="about-the-project" class="sectionDetails textLeft"> 
+                        <h2>ABOUT THE PROJECT</h2> 
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>The project is the web app, which will provide helpful information and guidance for the students who will join the internship market. The event is called Internship Market and is held annually, usually 1-2 months before the start day of the internship intake. There are two intakes in the year, in February and September. In the internship market, students can meet all the teams/departments in KLM E&M that are opening for intern positions. Also, they can have a tour around the Schiphol Oost area and talk with the employees about the working life and working environment.</p>
+                            </div>
+                            <div class="itemRight">
+                                <img src="./assets/klm - internship market webapp/Screen Shot 2023-12-18 at 14.03.14.png" alt="webapp">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Problem Section --> 
+                    <div id="problem" class="sectionDetails textRight"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemRight">
+                                <h2>PROBLEM</h2> 
+                            </div>
+                            <div class="itemLeft">
+                                <p>
+                                    At the MRO Lab of the KLM Engineering and Maintenance department, the onboarding process for the new interns is uninteresting and lacks information. They realise that the current onboarding is causing a drop in excitement and even stress for the new interns. After receiving the acceptance, no further information or factors can keep their engagement on the new journey at KLM. The excitement of the new interns is dropping with time, and on the first day of the new career, they do not feel interested anymore. <br><br>
+                                    In this onboarding process, I will focus on designing a digital platform that could inform the students about the internship market and different opportunities for the internship at KLM E&M and help them keep track of the information and the status of their application.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                     <!-- Research Questions Section --> 
+
+                    <div id="research-questions" class="sectionDetails textLeft"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                               <ul>
+                                <li>
+                                    <h3>What are the needs and desires of the new interns when they are in the onboarding process?</h3>
+                                </li>
+                                <br>
+                                <li>
+                                    <h3>What are the main problems that the current onboarding process is having at the moment?</h3>
+                                </li>
+                                <br>
+                                <li>
+                                    <h3>Which media source could be used to communicate with the new interns during onboarding?</h3>
+                                </li>
+                               </ul>
+                            </div>
+                            <div class="itemRight">
+                                <h2 style="text-align: right;">RESEARCH QUESTIONS</h2> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Research Insights Section --> 
+                    <div id="insights" class="sectionDetails textRight"> 
+                         
+                        <div class="wrapItem">
+                            <div class="itemRight">
+                                <h2>RESEARCH INSIGHTS</h2>
+                            </div>
+                            <div class="itemLeft">
+                                <ul> <li>The onboarding is now dull and lacks information and instructions.</li> 
+                                    <li>The onboarding time is missing frequent communication.</li> 
+                                    <li>The need to promote internship market/internship opportunities to students.</li> 
+                                    <li>New interns’ complaints revolve around giving/receiving information and long waiting times.</li> 
+                                    <li>Limited digital interactions on the internship market event.</li> 
+                                    <li>Students cannot keep track of the application process due to a lack of communication from the company.</li> 
+                                </ul> 
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <!--  Persona Section -->
+
+                    <div id="persona" class="sectionDetails textLeft"> 
+                        <h2>PERSONA</h2> 
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>The first persona is Kim Wierden; she is a 22-year-old communication student. Currently, she is looking for an internship opportunity at KLM since she is interested in the inclusive vision at KLM. However, there are not many advertisements online about KLM careers besides the KLM website. Therefore, her need is to have more options to view the internship changes online, which could be through social media.</p><br>
+                               <p>
+                                The second persona is about Rene Noot, a student who is now a new intern at KLM E&M - MRO Lab. He just got the offer from the managers and is now in the onboarding process. However, Rene feels that the long waiting time is dragging his enthusiast down because there is no more information after he gets the result. He wonders what he should do to prepare for the job and on the first day at work.</p><br>
+                            </div>
+                            
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container itemRight">
+                                    
+                                    <div class="slideshow-container">
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">1 / 2</div>
+                                      <img src="./assets/klm - internship market webapp/Untitled2.png" style="width:100%">
+                                      <div class="text"></div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">2 / 2</div>
+                                      <img src="./assets/klm - internship market webapp/Untitled3.png" style="width:100%">
+                                      <div class="text"></div>
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                    
+                                    </div>
+                                    <br>
+                                    
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span> 
+                                      <span class="dot" onclick="currentSlide(2)"></span> 
+                                    </div>
+                                    
+                                    <script>
+                                    let slideIndex = 1;
+                                    showSlides(slideIndex);
+                                    
+                                    function plusSlides(n) {
+                                      showSlides(slideIndex += n);
+                                    }
+                                    
+                                    function currentSlide(n) {
+                                      showSlides(slideIndex = n);
+                                    }
+                                    
+                                    function showSlides(n) {
+                                      let i;
+                                      let slides = document.getElementsByClassName("mySlides");
+                                      let dots = document.getElementsByClassName("dot");
+                                      if (n > slides.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";  
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndex-1].style.display = "block";  
+                                      dots[slideIndex-1].className += " active";
+                                    }
+                                    </script>
+
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+
+                    <div id="research-questions" class="sectionDetails textLeft"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>To address these issues, the platform will:</p> 
+                                <ul> <li>Provide real-time status tracking for applications.</li> 
+                                    <li>Use interactive digital media to keep interns engaged throughout the onboarding process.</li> 
+                                    <li>Offer frequent updates and notifications about the internship process via multiple communication channels (e.g., email, app notifications).</li> 
+                                    <li>Host virtual tours and Q&A sessions to make the onboarding experience exciting.</li> 
+                                </ul>
+                            </div>
+                            <div class="itemRight">
+                                <h2 style="text-align: right;">USER ENGAGEMENT FEATURES</h2>  
+                            </div>
+                        </div>
+                        
+                    </div> 
+
+
+                    <!-- style Guide Section -->
+                     <div id="styleGuide" class="sectionDetails">
+                        <h2>STYLE GUIDE</h2> 
+                        <img src="./assets/klm - internship market webapp/styleguide.jpg" alt="styleguide" style=" display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 70%;">
+                     </div>
+
+                     <div id="outcome" class="sectionDetails">
+                        <h2>OUTCOME</h2>
+                    
+                        <div class="slideshow-container">
+                                    
+                            <div class="mySlides1 fade">
+                              <div class="numbertext">1 / 2</div>
+                              <img src="./assets/klm - internship market webapp/klm intership webapp.jpg" style="display: block; margin-left: auto; margin-right: auto; height: 670px;">
+                              <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides1 fade">
+                              <div class="numbertext">2 / 2</div>
+                              <img src="./assets/klm - internship market webapp/klm intership webapp6.jpg" style="width:100%">
+                              <div class="text"></div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlidesSecond(-1)">❮</a>
+                            <a class="next" onclick="plusSlidesSecond(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot1" onclick="currentSlideSecond(1)"></span> 
+                              <span class="dot1" onclick="currentSlideSecond(2)"></span> 
+                            </div>
+                            
+                            <script>
+                            let slideIndexSecond = 1;
+                            showSlidesSecond(slideIndexSecond);
+                            
+                            function plusSlidesSecond(n) {
+                              showSlidesSecond(slideIndexSecond += n);
+                            }
+                            
+                            function currentSlideSecond(n) {
+                              showSlidesSecond(slideIndexSecond = n);
+                            }
+                            
+                            function showSlidesSecond(n) {
+                              let i;
+                              let slides1 = document.getElementsByClassName("mySlides1");
+                              let dots1 = document.getElementsByClassName("dot1");
+                              if (n > slides1.length) {slideIndexSecond = 1}    
+                              if (n < 1) {slideIndexSecond = slides1.length}
+                              for (i = 0; i < slides1.length; i++) {
+                                slides1[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots1.length; i++) {
+                                dots1[i].className = dots1[i].className.replace(" active", "");
+                              }
+                              slides1[slideIndexSecond-1].style.display = "block";  
+                              dots1[slideIndexSecond-1].className += " active";
+                            }
+                            </script>
+                            <br>
+                            
+                            <h2>Want to know more about the process of the design? Please follow these links to different versions of the wireframes</h2>
+                            <p>Here is the 1st wireframe. Please visit the prototype: <a href="https://www.figma.com/file/yA8aQA279DFJSpJIVHm2DT/App-fair?type=design&node-id=27%3A2&t=SowNNjF36WYFybcq-1" target="_blank">https://www.figma.com/file/yA8aQA279DFJSpJIVHm2DT/App-fair?type=design&node-id=27%3A2&t=SowNNjF36WYFybcq-1</a></p>
+                            <br>
+                            <p>Here is the 2nd wireframe. Please visit the prototype: <a href="https://mrolab-webapp.webflow.io/" target="_blank">https://mrolab-webapp.webflow.io/</a></p>
+                            <br>
+                            <p>Here is the final prototype. Please visit the prototype: <a href="https://klm-em-internship-market.netlify.app" target="_blank">https://klm-em-internship-market.netlify.app</a></p>
+                            
+                     </div>
+
+            </div> 
+        </main> 
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p>Copyright &#169; 2024 Ly Pham. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

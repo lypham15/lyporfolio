@@ -60,3 +60,21 @@ const experienceContainer = document.querySelectorAll('.experienceContainer');
 experienceContainer.forEach((element) => observerSecond.observe(element));
 
 
+// document.querySelectorAll('nav a').forEach(anchor => { 
+//   anchor.addEventListener('click', function (e) { e.preventDefault(); 
+//     const targetId = this.getAttribute('href'); document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' }); 
+//   }); 
+// });
+
+// const sections = document.querySelectorAll('.sectionDetails'); 
+// const options = { threshold: 0.2 }; 
+// const observers = new IntersectionObserver((entries, observers) => { 
+//   entries.forEach(entry => { 
+//     if (entry.isIntersecting) { 
+//       entry.target.classList.add('visible'); } }); }, options); 
+//       sections.forEach(section => { 
+//       observers.observes(sections); 
+//       });
+
+
+
