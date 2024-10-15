@@ -38,6 +38,142 @@
             </div>
         </div>
     </nav>
+
+    <!-- MAIN CONTAINER -->
+    <header> 
+        <div class="container"> 
+            <h1>Energy Transition - Smart Society</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#about-the-project">About the project</a></li> 
+                    <li><a href="#problem">Shadowing</a></li>
+                    <li><a href="#thestory">The story</a></li>
+                    <li><a href="#outcome">Outcome</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> <!-- Main Content --> 
+
+    <main> 
+        <div class="container1"> 
+
+                    <div id="about-the-project" class="sectionDetails textLeft"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>This project is a team assignment, with the goal of designing pre-made food packaging that brings the homemade feeling to the customers. <br> 
+                                    Marketing efforts that tell a story have proven successful in creating an emotionalconnection between product and consumer. When it comes to the food industry, the story focuses on the origins of the product as well as the thoughtful means of production.</p>
+                            </div>
+                            <div class="itemRight">
+                                <h2 style="text-align: right;">ABOUT THE PROJECT</h2> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Problem Section --> 
+                    <div id="problem" class="sectionDetails textRight"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemRight">
+                                <h2>SHADOWING</h2> 
+                            </div>
+                            <div class="itemLeft">
+                                <p>Shadowing is a small-scale qualitative research technique in which the researcher acts as an observer. Shadowing is a technique in which researchers observe real-life situations of a research subject or participant for a set amount of time. The type of shadowing we did was controlled, we got insights into a specific journey- in the Star Cuisine current production line. <br>
+                                    We saw the production line of the pre-made meals, we saw how they are produced, what ingredients are used, how the packaging is produced. Why do they have different containers?</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div id="thestory" class="sectionDetails textLeft"> 
+                        
+                        <div class="wrapItem">
+                            <div class="itemLeft">
+                                <p>We want to create the homemade feeling through the package through this concept. Since the pot can be easily found in the kitchen, we hope this package can bring a familiar feeling to the customers. Besides, the customers will feel that the food they are holding in their hands is something that just comes from their own kitchen but not from the supermarket. <br>
+                                    Furthermore, we also want to implement the QR code in our package. With the QR code, the customers can scan it to see the process of how Star Cuisine prepares and makes the food. Also, since the food is supplied in the Dutch market, most information that is printed on the package is in Dutch. However, there are also many international people who live in the Netherlands; thus, we think that QR codes might become a tool used to transfer to different languages. So, everyone who buys the product can easily read the information of the product in the language they are familiar with. Last but not least, the QR code can also show transparency in the information of the food.</p>
+                            </div>
+                            <div class="itemRight">
+                                <h2 style="text-align: right;">THE STORY</h2> 
+                                
+                            </div>
+                            
+                        </div>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%;" src="./assets/packaging design/4.jpeg" alt="">
+                        
+                    </div>
+                    
+                    <!--  Persona Section -->
+                   
+                     <div id="outcome" class="sectionDetails">
+                        
+
+                            <h2>OUTCOME</h2>
+                                
+                                    <div class="slideshow-container">
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">1 / 3</div>
+                                      <img src="./assets/packaging design/1.jpeg" style="width:100%">
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">2 / 3</div>
+                                      <img src="./assets/packaging design/2.jpeg" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img src="./assets/packaging design/3.jpeg" style="width:100%">
+                                        
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                    
+                                    </div>
+                                    <br>
+                                    
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span> 
+                                      <span class="dot" onclick="currentSlide(2)"></span>
+                                      <span class="dot" onclick="currentSlide(3)"></span>
+                                    </div>
+                                    
+                                    <script>
+                                    let slideIndex = 1;
+                                    showSlides(slideIndex);
+                                    
+                                    function plusSlides(n) {
+                                      showSlides(slideIndex += n);
+                                    }
+                                    
+                                    function currentSlide(n) {
+                                      showSlides(slideIndex = n);
+                                    }
+                                    
+                                    function showSlides(n) {
+                                      let i;
+                                      let slides = document.getElementsByClassName("mySlides");
+                                      let dots = document.getElementsByClassName("dot");
+                                      if (n > slides.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";  
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndex-1].style.display = "block";  
+                                      dots[slideIndex-1].className += " active";
+                                    }
+                                    </script>
+
+                            
+                     </div>
+
+                     
+
+            </div> 
+        </main> 
     
     <footer>
         <nav>
