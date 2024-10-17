@@ -77,4 +77,23 @@ experienceContainer.forEach((element) => observerSecond.observe(element));
 //       });
 
 
+let rotateX = 0;
+
+const box = document.querySelector('.box');
+
+// Add a wheel event listener on the box itself
+box.addEventListener('wheel', function(event) {
+  // Prevent the whole page from scrolling
+  event.preventDefault();
+
+  // Adjust the rotation based on the scroll delta
+  const delta = event.deltaY;
+  
+  // Modify rotation speed or direction as needed
+  rotateX += delta * 0.1; // Adjust 0.1 for speed/sensitivity
+  
+  // Apply the rotation transformation to the box
+  box.style.transform = `rotateX(${rotateX}deg)`;
+});
+
 

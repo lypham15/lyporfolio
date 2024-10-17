@@ -6,11 +6,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-</head>
 
-<body>
     <nav id="desktop-nav">
-        <div class="logo">Ly Pham</div>
+        <div class="logo" onclick="location.href = './index.html'">Ly Pham</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -22,7 +20,7 @@
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Ly Pham</div>
+        <div class="logo" onclick="location.href = './index.html'">Ly Pham</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -39,12 +37,64 @@
         </div>
     </nav>
 
-    <section id="profile">
+    <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Ly profile picture">
+    </div> -->
+    
+    <div class="section__text">
+        <img src="./assets/background/Background02.png" width="100%" alt="ly's photo">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"> Ly Pham</h1>
+        <p class="section__text__p2">UX Designer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Ly-pham.pdf')">Download CV</button>
+
+            <button class="btn btn-color-1" onclick="location.href = './#contact' ">Contact me</button>
+        </div>
+    </div>
+</head>
+<br>
+<br>
+<br>
+
+<body>
+    <!-- <nav id="desktop-nav">
+        <div class="logo" onclick="location.href = './index.html'">Ly Pham</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href = './index.html'">Ly Pham</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience </a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Ly profile picture">
         </div>
         
         <div class="section__text">
+            <img src="./assets/background/Background02.png" width="100%" alt="ly's photo">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title"> Ly Pham</h1>
             <p class="section__text__p2">UX Designer</p>
@@ -54,11 +104,8 @@
                 <button class="btn btn-color-1" onclick="location.href = './#contact' ">Contact me</button>
             </div>
 
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ly-pham15/'">
-            </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="about">
             <p class="section__text__p1">Get to know more</p>
@@ -94,8 +141,24 @@
 
             </div>
 
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+            <!-- <div class="box-container">
+                <div class="box">
+                  <div class="face front">POSITIVE IMPACT</div>
+                  <div class="face back">USER-CENTRIC DESIGN</div>
+                  <div class="face top">RESPONSIBILITY</div>
+                  <div class="face bottom">SINCERITY</div>
+                </div>
+            </div> -->
     </section>
+    
+    <div class="box-container">
+        <div class="box">
+          <div class="face front">POSITIVE IMPACT</div>
+          <div class="face back">USER-CENTRIC DESIGN</div>
+          <div class="face top">RESPONSIBILITY</div>
+          <div class="face bottom">SINCERITY</div>
+        </div>
+    </div>
 
     <section id="experience"> 
         <h1 class="title">Experience</h1>
@@ -124,6 +187,7 @@
                         <img src="./assets/rondje1.png">
                         <div class="text-box">
                             <h2>Freelancer</h2>
+                            <h3>UX/Graphic Designer</h3>
                             <small>07/2023 - NOW </small>
                             <p> Designing advertisement pages for agencies & startups in Vietnam</p>
                             <span class="rightContainerArrow"></span>
@@ -242,7 +306,6 @@
             </div>
         </div>
 
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
     <section id="contact">
@@ -251,12 +314,12 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:ly.phamhoang@outlook.com">ly.phamhoang@outlook.com</a></p>
+                <p><a href="mailto:ly.phamhoang@outlook.com" target="_blank">ly.phamhoang@outlook.com</a></p>
             </div>
 
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/ly-pham15/">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/ly-pham15/" target="_blank">LinkedIn</a></p>
             </div>
         </div>
     </section>
