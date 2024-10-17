@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ly Pham</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 
@@ -141,14 +141,9 @@
 
             </div>
 
-            <!-- <div class="box-container">
-                <div class="box">
-                  <div class="face front">POSITIVE IMPACT</div>
-                  <div class="face back">USER-CENTRIC DESIGN</div>
-                  <div class="face top">RESPONSIBILITY</div>
-                  <div class="face bottom">SINCERITY</div>
-                </div>
-            </div> -->
+            <p class="section__text__p1">Scroll on the box to explore about</p>
+            <h3 class="title">My Value</h3>
+
     </section>
     
     <div class="box-container">
@@ -340,6 +335,39 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        let lastStarfishTime = 0;
+      
+        // Function to create starfish
+        function createStarfish(event) {
+          const currentTime = Date.now();
+          if (currentTime - lastStarfishTime < 200) return; // Throttle to create a starfish every 200ms
+          lastStarfishTime = currentTime;
+      
+          // Create an img element for the starfish
+          const starfish = document.createElement('img');
+          starfish.src = './assets/starfish.png'; // Replace with the path to your starfish image
+          starfish.classList.add('starfish');
+      
+          // Set size and position of the starfish
+          const size = Math.random() * 20 + 20; // Random size between 20px and 40px
+          starfish.style.width = size + 'px';
+          starfish.style.height = size + 'px';
+          starfish.style.left = event.pageX - size / 2 + 'px';
+          starfish.style.top = event.pageY - size / 2 + 'px';
+      
+          document.body.appendChild(starfish);
+      
+          // Remove the starfish after animation ends (2s)
+          setTimeout(() => {
+            starfish.remove();
+          }, 2000);
+        }
+      
+        // Add mousemove event to trigger starfish creation
+        document.addEventListener('mousemove', createStarfish);
+      </script>
 </body>
 
 </html>
